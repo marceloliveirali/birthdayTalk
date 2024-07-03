@@ -1,0 +1,104 @@
+<!DOCTYPE html />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./img/birthday.svg" alt="Birthday" />
+            <p class="hero__text">
+                Vocês estão convidados para celebrar o meu aniversário, que começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Rua Pedro Luís - Rio Vermelho - Salvador
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>40º aniversário</b>
+                        Comemorar a marca
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        05/06/2025 às 20hs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Indique a sua presença
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="event event--meeting">
+            <div class="container" data-aos="flip-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Encontro</h2>
+                    <p class="event__details__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque molestiae aperiam tempore. Aliquid, animi sunt! Repellendus hic placeat, cupiditate blanditiis eveniet facilis delectus, recusandae consequuntur fuga, suscipit sed libero. Veniam?
+                    </p>
+                </div>
+                <img class="event__image" src="./img/birthday2.png" alt="aniversário" />
+            </div>
+        </section>
+        <section class="event event--food event--image-left">
+            <div class="container" data-aos="flip-left">
+                <div class="event__details">
+                    <h2 class="event__details__title">Comida e Bebida</h2>
+                    <p class="event__details__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque molestiae aperiam tempore. Aliquid, animi sunt! Repellendus hic placeat, cupiditate blanditiis eveniet facilis delectus, recusandae consequuntur fuga, suscipit sed libero. Veniam?
+                    </p>
+                </div>
+                <img class="event__image" src="./img/bebidaComida.png" alt="Comidas e Bebidas" />
+            </div>
+        </section>
+        <section class="event event--gifts">
+            <div class="container" data-aos="flip-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Preferência de Presentes</h2>
+                    <p class="event__details__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque molestiae aperiam tempore. Aliquid, animi sunt! Repellendus hic placeat, cupiditate blanditiis eveniet facilis delectus, recusandae consequuntur fuga, suscipit sed libero. Veniam?
+                    </p>
+                </div>
+                <img class="event__image" src="./img/birthday3.gif" alt="aniversário" />
+            </div>
+        </section>
+        <section class="event event--dj event--image-left">
+            <div class="container" data-aos="flip-left">
+                <div class="event__details">
+                    <h2 class="event__details__title">Disc Jockey</h2>
+                    <p class="event__details__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque molestiae aperiam tempore. Aliquid, animi sunt! Repellendus hic placeat, cupiditate blanditiis eveniet facilis delectus, recusandae consequuntur fuga, suscipit sed libero. Veniam?
+                    </p>
+                </div>
+                <img class="event__image muttley" src="./img/discjockey.png" alt="Comidas e Bebidas" />
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <h3 class="containerFooter__title">&copy; Todos os Direitos Reservados</h3>
+            <h4 class="containerFooter__subtitle">Desenvolvido por Marcelo Oliveira</h4>
+            <div class="containerFooter__icons">
+                <a class="containerFooter__icons-link" href="https://www.linkedin.com/in/marcelo-de-oliveira-lima-frontend/">
+                    <img class="containerFooter__icons-linkImg" src="./img/linkedin.svg" alt="Linkedln">
+                </a>
+                <a class="containerFooter__icons-link" href="https://github.com/marceloliveirali">
+                    <img class="containerFooter__icons-linkImg" src="./img/GitHub-Logo.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

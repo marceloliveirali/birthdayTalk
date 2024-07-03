@@ -1,0 +1,61 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+
+    &--meeting {
+        background-image: linear-gradient(variables.$brown, variables.$yellow);
+    }
+
+    &--food {
+        background-image: linear-gradient(variables.$yellow, variables.$lightblue);
+    }
+
+    &--gifts {
+        background-image: linear-gradient(variables.$lightblue, variables.$orange);
+    }
+
+    &--dj {
+        background-image: linear-gradient(variables.$orange, variables.$brown);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    @media only screen and (max-width: 640px) {
+        .container {
+            display: block;
+            gap: 40px;
+        }
+    }
+
+    &__image {
+        max-width: 360px;
+        border-radius: 20%;
+        object-fit: cover;
+    }
+
+    @media only screen and (max-width: 640px) {
+        &__image {
+            margin: 0 auto;
+            margin-top: 40px;
+            max-width: 100%;
+        }
+    }
+
+    &__details {
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+    }
+}

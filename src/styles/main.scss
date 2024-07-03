@@ -1,0 +1,30 @@
+@use 'hero';
+@use 'variables';
+@use './components/infos_bar';
+@use './components/buttons';
+@use 'event';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$secondaryTextColor;
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    @media only screen and (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
